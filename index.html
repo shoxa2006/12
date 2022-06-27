@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <input type="text" id="elem">
+  <button onclick="btn()">OK</button>
+  <script>
+    function btn() {
+      const elem = document.getElementById('elem')
+      const value = elem.value
+      const length = value.length
+      var n = value;
+      var num = parseInt(n / 10);
+      var num2 = n % 10;
+      var x = document.getElementById("demo");
+      var plus = num + num2;
+      console.log(plus);
+    }
+  </script>
+</body>
+
+</html>
